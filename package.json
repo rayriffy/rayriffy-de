@@ -2,6 +2,7 @@
   "name": "rayriffy-lullar-de",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://de.rayriffy.com",
   "dependencies": {
     "antd": "^3.18.2",
     "lodash": "^4.17.11",
