@@ -41,13 +41,17 @@ const Home = props => {
 
     /* Transform process */
     _.each([...i], char => {
-      if (char !== ' ') {
-        const filtered = _.head(_.filter(keys, o => o.key === char && o.lang === (en > th ? `en` : `th`)))
-        const transformed = _.head(_.filter(keys, o => o.id === filtered.related))
-        
-        o.push(transformed.key)
-      } else {
-        o.push(' ')
+      try {
+        if (char !== ' ') {
+          const filtered = _.head(_.filter(keys, o => o.key === char && o.lang === (en > th ? `en` : `th`)))
+          const transformed = _.head(_.filter(keys, o => o.id === filtered.related))
+          
+          o.push(transformed.key)
+        } else {
+          o.push(' ')
+        }
+      } catch {
+        o.push(char)
       }
     })
 
