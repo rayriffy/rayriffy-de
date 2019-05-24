@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 import Loadable from 'react-loadable'
 
+import App from './components/app'
 import Loading from './components/loading'
 
 import 'antd/dist/antd.css'
@@ -33,17 +34,19 @@ const Root = () => {
         </style>
       </Helmet>
 
-      <Switch>
-        <Route
-          exact
-          path="/"
-          render={() => (
-              <Home />
-          )}
-        />
+      <App>
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={() => (
+                <Home />
+            )}
+          />
 
-        <Route exact component={NotFound} />
-      </Switch>
+          <Route exact component={NotFound} />
+        </Switch>
+      </App>
     </Router>
   )
 }
