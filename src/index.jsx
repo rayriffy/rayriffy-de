@@ -1,4 +1,3 @@
-
 import React from 'react'
 import ReactDOM from 'react-dom'
 
@@ -36,13 +35,7 @@ const Root = () => {
 
       <App>
         <Switch>
-          <Route
-            exact
-            path="/"
-            render={() => (
-                <Home />
-            )}
-          />
+          <Route exact path="/" render={() => <Home />} />
 
           <Route exact component={NotFound} />
         </Switch>

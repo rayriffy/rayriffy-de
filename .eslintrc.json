@@ -1,0 +1,51 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+      "standard",
+      "prettier",
+      "prettier/standard",
+      "plugin:react/recommended"
+  ],
+  "plugins": [
+      "prettier",
+      "standard",
+      "node",
+      "import",
+      "react-hooks"
+  ],
+  "parserOptions": {
+      "sourceType": "module",
+      "ecmaFeatures": {
+          "jsx": true
+      }
+  },
+  "env": {
+      "es6": true,
+      "node": true
+  },
+  "rules": {
+      "prettier/prettier": [
+          "error",
+          {
+              "printWidth": 125,
+              "tabWidth": 2,
+              "singleQuote": true,
+              "trailingComma": "all",
+              "bracketSpacing": false,
+              "semi": false,
+              "useTabs": false,
+              "parser": "babylon",
+              "jsxBracketSameLine": true
+          }
+      ],
+      "eqeqeq": [
+          "error",
+          "always"
+      ],
+      "space-before-function-paren": 0,
+      "generator-star-spacing": 0,
+      "no-return-await": "off",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
+  }
+}

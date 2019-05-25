@@ -1,12 +1,12 @@
 import _ from 'lodash'
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 
-import { Row, Col, Input, Typography } from 'antd'
+import {Row, Col, Input, Typography} from 'antd'
 import styled from 'styled-components'
 
-import { keys } from '../data/database'
+import {keys} from '../data/database'
 
-const { Paragraph } = Typography
+const {Paragraph} = Typography
 
 const Output = styled(Paragraph)`
   text-align: center;
@@ -45,7 +45,7 @@ const Home = props => {
         if (char !== ' ') {
           const filtered = _.head(_.filter(keys, o => o.key === char && o.lang === (en > th ? `en` : `th`)))
           const transformed = _.head(_.filter(keys, o => o.id === filtered.related))
-          
+
           o.push(transformed.key)
         } else {
           o.push(' ')

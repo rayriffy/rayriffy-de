@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { Row, Col, Typography, Divider, Layout } from 'antd'
+import {Row, Col, Typography, Divider, Layout} from 'antd'
 import styled from 'styled-components'
 
-const { Content, Footer } = Layout
-const { Title, Text } = Typography
+const {Content, Footer} = Layout
+const {Title, Text} = Typography
 
 const Header = styled(Title)`
   font-size: 38px;
