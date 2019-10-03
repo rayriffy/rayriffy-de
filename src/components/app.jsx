@@ -1,5 +1,7 @@
 import React from 'react'
 
+import PropTypes from 'prop-types'
+
 import {Row, Col, Typography, Divider, Layout} from 'antd'
 import styled from 'styled-components'
 
@@ -39,3 +41,7 @@ const App = props => {
 }
 
 export default App
+
+App.propTypes = {
+  children: PropTypes.node,
+}
