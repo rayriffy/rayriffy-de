@@ -4,50 +4,23 @@
   "private": true,
   "homepage": "https://de.rayriffy.com",
   "dependencies": {
-    "antd": "^3.18.2",
+    "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.23",
+    "@zeit/next-css": "^1.0.1",
+    "antd": "^3.26.1",
+    "babel-plugin-emotion": "^10.0.23",
     "lodash": "^4.17.15",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1",
-    "react-loadable": "^5.5.0",
-    "react-router": "^5.0.0",
-    "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.1",
-    "styled-components": "^4.2.0"
+    "netlify-cli": "^2.24.0",
+    "next": "^9.1.5",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "eslint-config-prettier": "^4.3.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.17.3",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-react": "^7.13.0",
-    "eslint-plugin-react-hooks": "^1.6.0",
-    "eslint-plugin-standard": "^4.0.0",
-    "prettier": "^1.17.1"
+    "deploy": "netlify deploy --dir=./out --prod",
+    "dev": "next",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start"
   }
 }

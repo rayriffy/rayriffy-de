@@ -2,7 +2,7 @@ import _ from 'lodash'
 import React, {useState} from 'react'
 
 import {Row, Col, Input, Typography} from 'antd'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 import {keys} from '../data/database'
 
