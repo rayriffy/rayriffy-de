@@ -7,7 +7,6 @@ on:
 
 jobs:
   deploy:
-    needs: test
     runs-on: macOS-latest
     strategy:
       matrix:
